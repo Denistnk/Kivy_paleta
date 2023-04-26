@@ -1,0 +1,355 @@
+# Base widget from Rootwidget class in .py file
+<RootWidget>:
+
+	paleta1: paleta1
+	paleta2: paleta2
+	paleta3: paleta3
+	paleta4: paleta4
+
+	fundo1: fundo1
+	fundo2: fundo2
+	fundo3: fundo3
+	fundo4: fundo4
+
+	quadro1: quadro1
+	quadro2: quadro2
+	quadro3: quadro3
+	quadro4: quadro4
+	quadro5: quadro5
+
+	quadro6: quadro6
+	quadro7: quadro7
+	quadro8: quadro8
+	quadro9: quadro9
+	quadro10: quadro10
+
+	quadro11: quadro11
+	quadro12: quadro12
+	quadro13: quadro13
+	quadro14: quadro14
+	quadro15: quadro15
+
+	quadro16: quadro16
+	quadro17: quadro17
+	quadro18: quadro18
+	quadro19: quadro19
+	quadro20: quadro20
+
+	quadro21: quadro21
+	quadro22: quadro22
+	quadro23: quadro23
+	quadro24: quadro24
+	quadro25: quadro25
+
+	RelativeLayout:
+		size: 900, 900
+
+	Button:
+		text:'Gerar'
+		font_size:'18sp'
+		size_hint: .12, .06
+		pos_hint: {'center_x':.4, 'center_y':.90}
+		on_press: root.gerar()
+
+	Button:
+		text:'Resetar'
+		font_size:'18sp'
+		size_hint: .12, .06
+		pos_hint: {'center_x':.55, 'center_y':.90}
+		on_press: root.resetar()
+
+	##Paletas
+	Button:
+		id: fundo1
+		size_hint: .14, .10
+		pos_hint: {'center_x':.24, 'center_y':.78}
+		background_normal: 'images/button_normal.png'
+		background_down: 'images/button_normal.png'
+		background_color: (0,0,0)
+
+	Button:
+		id: paleta1
+		size_hint: .13, .09
+		pos_hint: {'center_x':.24, 'center_y':.78}
+		background_normal: 'images/button_normal.png'
+		background_down: 'images/button_normal.png'
+		on_press: root.selecionar1()
+
+	Button:
+		id: fundo2
+		size_hint: .14, .10
+		pos_hint: {'center_x':.41, 'center_y':.78}
+		background_normal: 'images/button_normal.png'
+		background_down: 'images/button_normal.png'
+		background_color: (0,0,0)
+		
+	Button:
+		id: paleta2
+		size_hint: .13, .09
+		pos_hint: {'center_x':.41, 'center_y':.78}
+		background_normal: ''
+		background_down: 'images/button_normal.png'
+		on_press: root.selecionar2()
+
+	Button:
+		id: fundo3
+		size_hint: .14, .10
+		pos_hint: {'center_x':.58, 'center_y':.78}
+		background_normal: 'images/button_normal.png'
+		background_down: 'images/button_normal.png'
+		background_color: (0,0,0)		
+
+	Button:
+		id: paleta3
+		size_hint: .13, .09
+		pos_hint: {'center_x':.58, 'center_y':.78}
+		background_normal: 'images/button_normal.png'
+		background_down: 'images/button_normal.png'
+		on_press: root.selecionar3()
+
+	Button:
+		id: fundo4
+		size_hint: .14, .10
+		pos_hint: {'center_x':.75, 'center_y':.78}
+		background_normal: 'images/button_normal.png'
+		background_down: 'images/button_normal.png'
+		background_color: (0,0,0)		
+
+	Button:
+		id: paleta4
+		size_hint: .13, .09
+		pos_hint: {'center_x':.75, 'center_y':.78}
+		background_normal: 'images/button_normal.png'
+		background_down: 'images/button_normal.png'
+		on_press: root.selecionar4()
+		
+
+	##Quadros
+	#Linha1
+	Button:
+		id: quadro1
+		size_hint: None, None
+		size: (150, 116) 
+		pos_hint: {'center_x':.13, 'center_y':.65}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro1)
+
+	Button:
+		id: quadro2
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.31, 'center_y':.65}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro2)
+	
+	Button:
+		id: quadro3
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.49, 'center_y':.65}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro3)
+
+	Button:
+		id: quadro4
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.67, 'center_y':.65}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro4)
+
+	Button:
+		id: quadro5
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.85, 'center_y':.65}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro5)
+
+	#Linha2
+	Button:
+		id: quadro6
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.13, 'center_y':.51}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro6)
+
+	Button:
+		id: quadro7
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.31, 'center_y':.51}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro7)
+
+	Button:
+		id: quadro8
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.49, 'center_y':.51}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro8)
+
+	Button:
+		id: quadro9
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.67, 'center_y':.51}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro9)
+
+	Button:
+		id: quadro10
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.85, 'center_y':.51}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro10)
+
+	#Linha3
+	Button:
+		id: quadro11
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.13, 'center_y':.37}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro11)
+
+	Button:	
+		id: quadro12
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.31, 'center_y':.37}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro12)
+
+	Button:
+		id: quadro13
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.49, 'center_y':.37}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro13)
+
+	Button:
+		id: quadro14
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.67, 'center_y':.37}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro14)
+
+	Button:
+		id: quadro15
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.85, 'center_y':.37}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro15)
+
+	#Linha4
+	Button:
+		id: quadro16
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.13, 'center_y':.23}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro16)
+
+	Button:
+		id: quadro17
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.31, 'center_y':.23}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro17)
+
+	Button:
+		id: quadro18
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.49, 'center_y':.23}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro18)
+
+	Button:
+		id: quadro19
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.67, 'center_y':.23}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro19)
+
+	Button:
+		id: quadro20
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.85, 'center_y':.23}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro20)
+
+	#Linha5
+	Button:
+		id: quadro21
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.13, 'center_y':.09}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro21)
+
+	Button:
+		id: quadro22
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.31, 'center_y':.09}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro22)
+	Button:
+		id: quadro23
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.49, 'center_y':.09}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro23)
+
+	Button:
+		id: quadro24
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.67, 'center_y':.09}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro24)
+
+	Button:
+		id: quadro25
+		size_hint: None, None
+		size: 150, 116
+		pos_hint: {'center_x':.85, 'center_y':.09}
+		background_down: 'images/button_normal.png'
+		background_normal: 'images/button_normal.png'
+		on_press: root.pintar(quadro25)
